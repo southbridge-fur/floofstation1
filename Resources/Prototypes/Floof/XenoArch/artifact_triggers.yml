@@ -1,0 +1,39 @@
+- type: artifactTrigger
+  id: TriggerReproductive
+  targetDepth: 1
+  triggerHint: artifact-trigger-hint-reproductive
+  components:
+  - type: Reactive
+    groups:
+      Acidic: [ Touch ]
+    reactions:
+    - reagents:
+      - Cum
+      - NaturalLubricant
+      - Milk
+      - Philterex
+      - Pomelustine
+      - Libidozenithizine
+      methods: [ Touch ]
+      effects:
+      - !type:ActivateArtifact
+
+# An idea for a future trigger involving any alcohol
+# Unfortunately the reactive system doesn't care about inhereitance.
+# - type: artifactTrigger
+#   id: TriggerIntoxicating
+#   targetDepth: 1
+#   triggerHint: artifact-trigger-hint-intoxicating
+#   components:
+#   - type: Reactive
+#     groups:
+#       Acidic: [ Touch ]
+#     reactions:
+#     - reagents:
+#       - BaseAlcohol
+#       - Philterex
+#       - Pomelustine
+#       - Libidozenithizine
+#       methods: [ Touch ]
+#       effects:
+#       - !type:ActivateArtifact
