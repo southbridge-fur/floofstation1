@@ -20749,7 +20749,8 @@ entities:
       pos: -36.5,-31.5
       parent: 2
     - type: Apc
-      lastExternalState: Low
+      hasAccess: True
+      lastExternalState: Good
       lastChargeState: Full
     - type: PowerNetworkBattery
       loadingNetworkDemand: 70
@@ -28048,11 +28049,6 @@ entities:
       parent: 2
 - proto: Autolathe
   entities:
-  - uid: 1813
-    components:
-    - type: Transform
-      pos: 1.5,-39.5
-      parent: 2
   - uid: 4245
     components:
     - type: Transform
@@ -56557,11 +56553,6 @@ entities:
       parent: 2
 - proto: CargoTechFab
   entities:
-  - uid: 1890
-    components:
-    - type: Transform
-      pos: -10.5,-13.5
-      parent: 2
   - uid: 13860
     components:
     - type: Transform
@@ -58008,11 +57999,6 @@ entities:
     - type: Transform
       pos: 37.5,2.5
       parent: 2
-  - uid: 15930
-    components:
-    - type: Transform
-      pos: 36.5,2.5
-      parent: 2
   - uid: 17110
     components:
     - type: Transform
@@ -58042,6 +58028,11 @@ entities:
     components:
     - type: Transform
       pos: -6.5,-26.5
+      parent: 2
+  - uid: 24408
+    components:
+    - type: Transform
+      pos: 36.5,2.5
       parent: 2
 - proto: CarpetPurple
   entities:
@@ -64384,23 +64375,6 @@ entities:
       rot: 3.141592653589793 rad
       pos: 13.5153,-32.39743
       parent: 2
-- proto: chem_master
-  entities:
-  - uid: 12031
-    components:
-    - type: Transform
-      pos: -30.5,-38.5
-      parent: 2
-  - uid: 12050
-    components:
-    - type: Transform
-      pos: -34.5,-37.5
-      parent: 2
-  - uid: 13598
-    components:
-    - type: Transform
-      pos: -16.5,-36.5
-      parent: 2
 - proto: ChemDispenser
   entities:
   - uid: 10460
@@ -64433,6 +64407,23 @@ entities:
     components:
     - type: Transform
       pos: -30.5,-36.5
+      parent: 2
+- proto: ChemMaster
+  entities:
+  - uid: 12031
+    components:
+    - type: Transform
+      pos: -30.5,-38.5
+      parent: 2
+  - uid: 12050
+    components:
+    - type: Transform
+      pos: -34.5,-37.5
+      parent: 2
+  - uid: 13598
+    components:
+    - type: Transform
+      pos: -16.5,-36.5
       parent: 2
 - proto: ChessBoard
   entities:
@@ -76818,6 +76809,13 @@ entities:
     components:
     - type: Transform
       pos: 75.49805,-44.26112
+      parent: 2
+- proto: EngineeringTechFab
+  entities:
+  - uid: 1890
+    components:
+    - type: Transform
+      pos: -10.5,-13.5
       parent: 2
 - proto: ExosuitFabricator
   entities:
@@ -131761,6 +131759,13 @@ entities:
     - type: Transform
       pos: -18.5,-36.5
       parent: 2
+- proto: ServiceTechFab
+  entities:
+  - uid: 1813
+    components:
+    - type: Transform
+      pos: 1.5,-39.5
+      parent: 2
 - proto: ShardGlass
   entities:
   - uid: 793
@@ -133500,13 +133505,6 @@ entities:
     - type: Transform
       pos: -39.5,-44.5
       parent: 2
-- proto: SignCourt
-  entities:
-  - uid: 6214
-    components:
-    - type: Transform
-      pos: 34.5,18.5
-      parent: 2
 - proto: SignCryogenicsMed
   entities:
   - uid: 15241
@@ -133984,6 +133982,11 @@ entities:
       parent: 2
 - proto: SignLawyer
   entities:
+  - uid: 6214
+    components:
+    - type: Transform
+      pos: 34.5,18.5
+      parent: 2
   - uid: 17070
     components:
     - type: Transform
@@ -134428,7 +134431,7 @@ entities:
     - type: Transform
       pos: 20.100466,-48.530296
       parent: 2
-- proto: soda_dispenser
+- proto: SodaDispenser
   entities:
   - uid: 1651
     components:
@@ -136374,6 +136377,13 @@ entities:
     components:
     - type: Transform
       pos: -21.5,11.5
+      parent: 2
+- proto: SpawnPointInventorySpecialist
+  entities:
+  - uid: 24390
+    components:
+    - type: Transform
+      pos: 0.5,19.5
       parent: 2
 - proto: SpawnPointJanitor
   entities:
@@ -158178,6 +158188,221 @@ entities:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: -2.5,3.5
+      parent: 2
+- proto: WarpPointAI
+  entities:
+  - uid: 24391
+    components:
+    - type: Transform
+      pos: -62.5,-12.5
+      parent: 2
+- proto: WarpPointAtmos
+  entities:
+  - uid: 24403
+    components:
+    - type: Transform
+      pos: -0.5,-2.5
+      parent: 2
+- proto: WarpPointBombing
+  entities:
+  - uid: 15930
+    components:
+    - type: Transform
+      pos: 36.5,2.5
+      parent: 2
+    - type: WarpPoint
+      location: Detective's Office
+  - uid: 24392
+    components:
+    - type: Transform
+      pos: -42.5,-29.5
+      parent: 2
+    - type: WarpPoint
+      location: Medical
+  - uid: 24393
+    components:
+    - type: Transform
+      pos: -3.5,-44.5
+      parent: 2
+    - type: WarpPoint
+      location: Bar
+  - uid: 24394
+    components:
+    - type: Transform
+      pos: -17.5,-52.5
+      parent: 2
+    - type: WarpPoint
+      location: Bridge
+  - uid: 24395
+    components:
+    - type: Transform
+      pos: 4.5,22.5
+      parent: 2
+    - type: WarpPoint
+      location: Logistics
+  - uid: 24396
+    components:
+    - type: Transform
+      pos: 26.5,1.5
+      parent: 2
+    - type: WarpPoint
+      location: Janitorial
+  - uid: 24397
+    components:
+    - type: Transform
+      pos: 15.5,-40.5
+      parent: 2
+    - type: WarpPoint
+      location: Library
+  - uid: 24404
+    components:
+    - type: Transform
+      pos: 39.5,22.5
+      parent: 2
+    - type: WarpPoint
+      location: Courtroom
+  - uid: 24411
+    components:
+    - type: Transform
+      pos: -2.5,-20.5
+      parent: 2
+    - type: WarpPoint
+      location: Power Bank
+  - uid: 24413
+    components:
+    - type: Transform
+      pos: -28.5,-47.5
+      parent: 2
+    - type: WarpPoint
+      location: Conference Room
+  - uid: 24414
+    components:
+    - type: Transform
+      pos: -25.5,-9.5
+      parent: 2
+    - type: WarpPoint
+      location: Brig
+  - uid: 24421
+    components:
+    - type: Transform
+      pos: 13.5,-17.5
+      parent: 2
+    - type: WarpPoint
+      location: Communications
+- proto: WarpPointBotany
+  entities:
+  - uid: 24405
+    components:
+    - type: Transform
+      pos: -17.5,-35.5
+      parent: 2
+- proto: WarpPointChapel
+  entities:
+  - uid: 24400
+    components:
+    - type: Transform
+      pos: 36.5,-13.5
+      parent: 2
+- proto: WarpPointCryo
+  entities:
+  - uid: 24407
+    components:
+    - type: Transform
+      pos: 14.5,-48.5
+      parent: 2
+- proto: WarpPointDebris
+  entities:
+  - uid: 24415
+    components:
+    - type: Transform
+      pos: 69.5,-62.5
+      parent: 2
+  - uid: 24416
+    components:
+    - type: Transform
+      pos: 90.5,-18.5
+      parent: 2
+  - uid: 24417
+    components:
+    - type: Transform
+      pos: 1.5,-93.5
+      parent: 2
+- proto: WarpPointDisposals
+  entities:
+  - uid: 24409
+    components:
+    - type: Transform
+      pos: 29.5,-55.5
+      parent: 2
+- proto: WarpPointDorms
+  entities:
+  - uid: 24410
+    components:
+    - type: Transform
+      pos: 10.5,-40.5
+      parent: 2
+- proto: WarpPointEngineering
+  entities:
+  - uid: 24420
+    components:
+    - type: Transform
+      pos: -10.5,-12.5
+      parent: 2
+- proto: WarpPointEpistemics
+  entities:
+  - uid: 24418
+    components:
+    - type: Transform
+      pos: 29.5,-28.5
+      parent: 2
+- proto: WarpPointKitchen
+  entities:
+  - uid: 24399
+    components:
+    - type: Transform
+      pos: -7.5,-32.5
+      parent: 2
+- proto: WarpPointLawyer
+  entities:
+  - uid: 24401
+    components:
+    - type: Transform
+      pos: 28.5,11.5
+      parent: 2
+  - uid: 24402
+    components:
+    - type: Transform
+      pos: 35.5,28.5
+      parent: 2
+    - type: WarpPoint
+      location: Justice
+- proto: WarpPointMorgue
+  entities:
+  - uid: 24419
+    components:
+    - type: Transform
+      pos: -45.5,-45.5
+      parent: 2
+- proto: WarpPointReporter
+  entities:
+  - uid: 24398
+    components:
+    - type: Transform
+      pos: 14.5,-52.5
+      parent: 2
+- proto: WarpPointSalvage
+  entities:
+  - uid: 24406
+    components:
+    - type: Transform
+      pos: 14.5,24.5
+      parent: 2
+- proto: WarpPointVault
+  entities:
+  - uid: 24412
+    components:
+    - type: Transform
+      pos: -29.5,-61.5
       parent: 2
 - proto: WaterCooler
   entities:
